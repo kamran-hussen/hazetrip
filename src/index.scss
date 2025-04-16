@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import "./styles/variables";
+@import "./styles/header";
+@import "./styles/nav";
+@import "./styles/home";
+
+*{
+  @apply box-border p-0 m-0;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  @apply antialiased leading-[20px] font-normal;
+}
