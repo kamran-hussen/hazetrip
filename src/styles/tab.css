@@ -1,0 +1,21 @@
+.hazetrip-search-tab{
+    @apply absolute bottom-[-8px] z-10 left-[100px] w-[82%];
+}
+.tab-nav{
+    @apply flex items-center gap-4 relative bottom-[-26px] left-[30px];
+}
+.tab-nav-item{
+    @apply w-[80px] gap-1 cursor-pointer rounded-[var(--border-radius-md)] bg-white text-[var(--text-color)] text-base leading-[26px] px-4 py-2.5 flex items-center justify-between flex-col;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.14);
+
+}
+.tab-nav-item.active {
+    @apply bg-[var(--secondary)] text-white;
+}
+.tab-nav-item.active svg {
+    filter: brightness(1000);
+}
+.tab-content{
+    @apply bg-white rounded-[var(--border-radius-md)] pt-[50px] px-8 pb-8;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.12);
+}

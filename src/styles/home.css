@@ -9,6 +9,9 @@
 .hazetrip-sidebar {
   @apply w-[260px] h-full flex-shrink-0 border border-y-0 border-l-0 border-solid border-[var(--border-light)];
 }
+.hazetrip-main-body {
+  @apply p-6 relative;
+}
 
 .hazetrip-sidebar-header {
   @apply px-[22px] py-5 flex items-center;
@@ -18,10 +21,12 @@
   @apply px-3 pb-3;
 }
 
-.hazetrip-stats {
+.hazetrip-main-inner {
   @apply border border-solid p-3 w-full flex items-center justify-between rounded-[var(--border-radius)] border-[var(--border-lighter)];
 }
-
+.hazetrip-main-header-right{
+  @apply flex items-center gap-3;
+}
 .hazetrip-cta {
   @apply flex items-center gap-3;
 }
@@ -60,6 +65,10 @@
   @apply text-[var(--secondary)];
 }
 
+/*
+ * Badge
+ */
+
 .badge {
   @apply rounded-xl px-2 py-1 font-medium text-[11px] leading-[12px];
 }
@@ -68,3 +77,63 @@
   @apply text-[var(--danger)];
   background: rgba(var(--danger-soft), 0.2);
 }
+
+/*
+ * Stats
+ */
+.hazetrip-stats-cards{
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3;
+}
+.hazetrip-stats-card{
+  @apply py-3 px-5 rounded-[var(--border-radius-lg)] grid gap-2;
+}
+.hazetrip-stats-card .stat-content{
+  @apply flex items-center gap-1;
+}
+.hazetrip-stats-card .stat-content-footer{
+  @apply flex items-center gap-1 justify-between;
+}
+
+.hazetrip-stats-card .stat-title{
+  @apply text-xs my-0;
+}
+.hazetrip-stats-card .stat-value{
+  @apply text-xl font-medium text-[var(--gray-dark)] leading-[28px];
+}
+
+.hazetrip-stats-card.rewards-card {
+  background-color: rgba(226, 181, 0, 0.1);
+}
+.hazetrip-stats-card.partial-card {
+  background-color: rgba(5, 120, 191, 0.1);
+}
+.hazetrip-stats-card.emergency-credit-card {
+  background-color: rgba(221, 51, 48, 0.1);
+}
+.hazetrip-stats-card.balance-card {
+  background-color: rgba(25, 170, 64, 0.1);
+}
+
+.hazetrip-stats-card.rewards-card .stat-title{
+  @apply text-[var(--warning)];
+}
+.hazetrip-stats-card.partial-card .stat-title{
+  @apply text-[var(--info)];
+}
+.hazetrip-stats-card.emergency-credit-card .stat-title{
+  @apply text-[var(--danger)];
+}
+.hazetrip-stats-card.balance-card .stat-title{
+  @apply text-[var(--success)];
+}
+
+/*
+ * notification-actions
+ */
+.hazetrip-notifications-dropwon-wrap .notification-actions{
+  @apply w-10 h-10 rounded-[var(--border-radius-md)] flex items-center justify-center bg-[var(--accent)] border border-solid border-[var(--border-lighter)] cursor-pointer relative;
+}
+.hazetrip-notifications-dropwon-wrap .notification-actions span{
+    @apply w-3.5 h-3.5 rounded-full bg-[var(--warning)] flex items-center justify-center text-xs text-[var(--gray-dark)] absolute top-1 right-1;
+}
+
