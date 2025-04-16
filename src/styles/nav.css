@@ -1,0 +1,67 @@
+.menu-list {
+  @apply grid gap-1.5;
+}
+
+.menu-list a,
+.menu-list button {
+  @apply flex w-full items-center justify-between gap-2 py-1.5 px-3 text-sm font-normal leading-[22px] transition duration-200 text-[var(--text-base)] rounded-[var(--border-radius)];
+}
+
+.menu-list a span,
+.menu-list button span {
+  @apply flex items-center gap-2;
+}
+
+.menu-list a .action-icon,
+.menu-list button .action-icon {
+  @apply transition duration-200;
+}
+
+.menu-list a:hover,
+.menu-list button:hover {
+  @apply bg-[var(--accent)] text-[var(--primary)];
+}
+
+.menu-list a:hover .action-icon svg,
+.menu-list button:hover .action-icon svg {
+  @apply text-[var(--primary)];
+}
+
+.menu-list a.active,
+.menu-list button.active {
+  @apply bg-[var(--primary)] text-white;
+}
+
+.menu-list .menu-heading {
+  @apply text-xs font-normal leading-[22px] uppercase px-3 py-1.5 mt-3.5
+    text-[var(--text-light)];
+  letter-spacing: 2px;
+}
+
+.menu-list li.has-dropdown {
+  @apply relative;
+}
+
+.menu-list li.has-dropdown ul {
+  @apply absolute left-2 w-[96%] mt-1;
+}
+
+.menu-list li.has-dropdown ul a {
+  @apply relative pl-[30px];
+}
+
+.menu-list li.has-dropdown ul a::before {
+  @apply absolute top-1/2 left-4 w-1 h-1 rounded-full bg-[var(--text-base)];
+  transform: translateY(-50%);
+  content: "";
+}
+
+.menu-list li.has-dropdown ul a:hover::before {
+  @apply bg-[var(--primary)];
+}
+
+.menu-list li.has-dropdown.open .action-icon {
+  transform: rotate(-180deg);
+}
+
+

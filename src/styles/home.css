@@ -1,0 +1,70 @@
+.hazetrip-home {
+  @apply flex h-[100vh];
+}
+
+.hazetrip-main {
+  @apply flex-1;
+}
+
+.hazetrip-sidebar {
+  @apply w-[260px] h-full flex-shrink-0 border border-y-0 border-l-0 border-solid border-[var(--border-light)];
+}
+
+.hazetrip-sidebar-header {
+  @apply px-[22px] py-5 flex items-center;
+}
+
+.hazetrip-sidebar-menu {
+  @apply px-3 pb-3;
+}
+
+.hazetrip-stats {
+  @apply border border-solid p-3 w-full flex items-center justify-between rounded-[var(--border-radius)] border-[var(--border-lighter)];
+}
+
+.hazetrip-cta {
+  @apply flex items-center gap-3;
+}
+
+.hazetrip-cta-card {
+  @apply border border-dashed py-3 px-5 rounded-xl
+    border-[var(--border-light)];
+}
+
+.hazetrip-cta-card .title {
+  @apply text-xs font-normal leading-[20px] mb-1 text-[var(--text-base)];
+}
+
+.hazetrip-cta-card .number {
+  @apply text-sm font-medium;
+}
+
+.hazetrip-cta-card .text {
+  @apply text-xs leading-[16px]
+    text-[var(--text-base)];
+}
+
+.hazetrip-cta-card .hazetrip-cta-card-content {
+  @apply flex items-center justify-between gap-2.5;
+}
+
+.hazetrip-cta-card .cta-content {
+  @apply border border-solid border-y-0 border-r-0 pl-2.5 border-[var(--border-lighter)];
+}
+
+.hazetrip-icon {
+  @apply w-[30px] h-[30px] flex items-center justify-center rounded-full bg-[var(--accent)];
+}
+
+.hazetrip-icon svg {
+  @apply text-[var(--secondary)];
+}
+
+.badge {
+  @apply rounded-xl px-2 py-1 font-medium text-[11px] leading-[12px];
+}
+
+.badge.danger {
+  @apply text-[var(--danger)];
+  background: rgba(var(--danger-soft), 0.2);
+}

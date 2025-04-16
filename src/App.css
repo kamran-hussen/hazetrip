@@ -4,10 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-@import "styles/variables";
-@import "styles/header";
-@import "styles/nav";
-@import "styles/home";
+@import "./styles/variables.css";
+@import "./styles/header.css";
+@import "./styles/nav.css";
+@import "./styles/home.css";
 
 *{
   @apply box-border p-0 m-0;
