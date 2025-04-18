@@ -19,3 +19,6 @@
     @apply bg-white rounded-[var(--border-radius-md)] pt-[50px] px-8 pb-8;
     box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.12);
 }
+.tab-content-item-inner{
+
+}

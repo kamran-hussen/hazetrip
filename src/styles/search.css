@@ -1,0 +1,121 @@
+.flight-search-container{
+    @apply flex items-center gap-3.5;
+}
+.hazetrip-from-to-container{
+    @apply flex items-center gap-3.5 flex-shrink-0;
+}
+.journey-card,
+.departure-and-return-card {
+    @apply border border-solid border-[var(--border-light)] w-[336px] flex-shrink-0 rounded-[var(--border-radius-md)] bg-white p-3.5;
+}
+.departure-and-return-card{
+    @apply flex items-center gap-[30px];
+}
+.departure-row{
+    @apply w-[54%] last:w-[46%];
+}
+.departure-head{
+    @apply flex justify-between items-center mb-1;
+}
+.journey-card-head{
+    @apply flex items-center justify-between mb-1;
+}
+.journey-card-text,
+.departure-row .text {
+    @apply text-[11px] leading-[16px] text-[var(--text-base)];
+}
+.journey-card-icon{
+    @apply opacity-[0.6];
+}
+.journey-card-icon svg{
+    @apply w-5 h-5;
+}
+
+.journey-card-input-wrap{
+    @apply flex items-center gap-2.5;
+}
+.journey-card-input-hading{
+    @apply text-base font-medium uppercase text-[var(--text-dark)];
+}
+.journey-card-input-content{
+    @apply border border-solid border-y-0 border-r-0 border-[var(--border-lighter)] pl-3;
+}
+.journey-card-input-label{
+    @apply text-sm text-[var(--text-dark)];
+}
+.journey-card-input-text{
+    @apply text-xs text-[var(--text-base)];
+}
+.journey-card-switch{
+   @apply mx-[-24px] relative z-10;
+}
+.journey-card-switch button {
+    @apply bg-white w-9 h-9 border-solid rounded-full border border-[var(--border-lighter)] flex items-center justify-center text-gray-600 cursor-pointer;
+
+}
+.add-return-button{
+    @apply text-sm text-[var(--text-dark)] flex items-center gap-1;
+}
+
+.hazetrip-journey-right{
+    @apply flex gap-3.5 items-center;
+}
+
+/*
+Traveler
+ */
+.hazetrip-traveler-wrapper{
+    @apply w-[245px] grid gap-2;
+}
+.hazetrip-traveler,
+.traveler-seat-action {
+    @apply border-solid rounded-[var(--border-radius-md)] border border-[var(--border-light)] py-2.5 px-3 flex items-center;
+}
+.traveler-count{
+    @apply text-base font-medium text-[var(--text-dark)] pr-2;
+}
+.traveler-action{
+    @apply flex-1 justify-between border-solid border-y-0 border-r-0 border border-[var(--border-lighter)] flex items-center gap-2 pl-2;
+}
+.traveler-action .title{
+    @apply text-[11px] text-[var(--text-base)] leading-[16px];
+}
+
+.traveler-seat-action {
+    @apply flex items-center justify-between;
+}
+.traveler-seat-action .title {
+    @apply text-sm text-[var(--text-dark)];
+}
+
+.hazetrip-search-button{
+    @apply flex items-center justify-center pt-5;
+}
+
+/*
+flight-type
+ */
+.flight-type{
+    @apply flex items-center justify-end mb-6 gap-2;
+}
+
+.flight-type .flight-type-button{
+    @apply flex items-center gap-1.5 bg-[var(--accent)] rounded-[var(--border-radius-md)] py-1.5 px-3 text-sm text-[var(--text-dark)] leading-[24px] cursor-pointer;
+}
+.flight-type .flight-type-button .radio-icon {
+    @apply relative w-3 h-3 rounded-full border border-solid border-[var(--text-dark)] block;
+}
+.flight-type .flight-type-button .radio-icon:after {
+    @apply absolute w-1.5 h-1.5 bg-transparent rounded-full top-1/2 left-1/2;
+    content: "";
+    transform: translate(-50%, -50%);
+}
+.flight-type .flight-type-button.selected{
+    @apply bg-[var(--primary)] text-white;
+}
+.flight-type .flight-type-button.selected .radio-icon{
+    @apply border-white;
+}
+.flight-type .flight-type-button.selected .radio-icon:after{
+    @apply bg-white;
+}

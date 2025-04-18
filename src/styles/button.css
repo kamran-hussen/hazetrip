@@ -1,0 +1,17 @@
+.hazetrip-button{
+    @apply py-2.5 px-4 rounded-[var(--border-radius-md)] text-sm font-bold leading-[20px] uppercase flex items-center gap-2 text-center;
+}
+.hazetrip-button.primary{
+    @apply bg-[var(--primary)] text-white;
+}
+.hazetrip-button.primary svg {
+    filter: brightness(10000);
+}
+
+.hazetrip-button-with-icon{
+    @apply rounded-[var(--border-radius-lg)] py-0 pr-0;
+}
+.hazetrip-button-with-icon span{
+    @apply w-[46px] h-[46px] ml-1.5 flex items-center justify-center text-white;
+    border-left: 1px solid rgba(15, 66, 41, 0.3)
+}

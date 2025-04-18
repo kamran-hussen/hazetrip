@@ -9,6 +9,8 @@
 @import "./styles/nav.css";
 @import "./styles/home.css";
 @import "./styles/tab.css";
+@import "./styles/search.css";
+@import "./styles/button.css";
 
 *{
   @apply box-border p-0 m-0;
