@@ -3,11 +3,7 @@ import { useState } from 'react';
 
 import { Link } from "react-router-dom";
 import Nav from "../components/sidebar/Nav";
-import Cta from "../components/cta/Cta";
-import Stats from "../components/stats/Stats";
-import Notification from "../components/icons/Notification";
 import logo from '../images/logo.svg';
-import avatar from '../images/avatar.png';
 import banner from '../images/banner.jpg';
 import Departure from "../components/icons/Departure";
 import Hotel from "../components/icons/Hotel";
@@ -19,8 +15,8 @@ import ArrowSwitch from "../components/icons/ArrowSwitch";
 import Calendar from "../components/icons/Calendar";
 import PlusCircle from "../components/icons/PlusCircle";
 import PremiumEconomy from "../components/icons/PremiumEconomy";
-import SearchFlight from "../components/icons/SearchFlight";
 import RunningFlight from "../components/icons/RunningFlight";
+import Header from "../components/header/Header";
 
 const Home = () => {
     const [activeTab, setActiveTab] = useState('Flights');
@@ -47,33 +43,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="hazetrip-main">
-                <div className="hazetrip-main-header">
-                    <div className="hazetrip-main-inner">
-                        <div className="hazetrip-cta">
-                            <Cta title="Reservation Support" number="+088 01723894386" text="demo@example.com"/>
-                            <Cta title="Sales Support" number="+088 01723894386" text="demo@example.com"/>
-                        </div>
-
-                        <div className="hazetrip-main-header-right">
-                            <div className="hazetrip-stats-cards">
-                                <Stats/>
-                            </div>
-                            <div className="hazetrip-notifications-dropwon-wrap">
-                                <button className="notification-actions">
-                                    <Notification/>
-                                    <span>3</span>
-                                </button>
-                            </div>
-                            <div className="hazetrip-profile-dropdown-wrap">
-                                <div className="profile-actions">
-                                    <img src={avatar} alt=""/>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
+                <Header/>
 
                 <div className="hazetrip-main-body">
                     <div className="hazetrip-main-body-inner">
@@ -228,11 +198,17 @@ const Home = () => {
                                                     </div>
                                                 </div>
                                                 <div className="hazetrip-search-button">
-                                                    <button
-                                                        className="hazetrip-button primary hazetrip-button-with-icon">
+                                                    <Link className="hazetrip-button primary hazetrip-button-with-icon"
+                                                          to="/flight-search-result">
                                                         Search Flight
                                                         <span><RunningFlight/></span>
-                                                    </button>
+                                                    </Link>
+
+                                                    {/*<button*/}
+                                                    {/*    className="hazetrip-button primary hazetrip-button-with-icon">*/}
+                                                    {/*    Search Flight*/}
+                                                    {/*    <span><RunningFlight/></span>*/}
+                                                    {/*</button>*/}
                                                 </div>
                                             </div>
                                         </div>

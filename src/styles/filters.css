@@ -1,0 +1,56 @@
+.sidebar-filters{
+    @apply bg-white border border-solid border-[var(--border-light)] rounded-[var(--border-radius-xl)] max-w-[310px];
+}
+.filter-item{
+    @apply py-4 px-6 border border-dashed border-x-0 border-t-0 border-[var(--border-lighter)];
+}
+.filter-item-action{
+    @apply flex justify-between items-center cursor-pointer;
+}
+.filter-item-action .title{
+    @apply text-xl font-medium leading-[20px] text-[var(--text-dark)];
+}
+.time-filter-wrap{
+    @apply mt-2;
+}
+.time-filter-wrap .from-country{
+ @apply text-[11px] mb-1.5 font-medium text-[var(--text-light)] uppercase tracking-wide;
+}
+.time-filter {
+    @apply flex gap-2;
+}
+.time-filter button {
+    @apply flex flex-col items-center justify-center w-16 py-[7px] rounded-[var(--border-radius-lg)] border border-[var(--border-light)] text-[10px] font-normal text-gray-500 leading-[14px] gap-1.5 uppercase;
+}
+
+.filter-by-wrap{
+    @apply grid gap-1 mt-5;
+}
+
+.filter-by-label{
+    @apply cursor-pointer flex justify-between items-center text-sm text-[var(--text-dark)] leading-[20px] gap-3;
+}
+.filter-by-label .label-wrapper {
+    @apply flex items-center gap-3;
+}
+.form-label{
+    @apply flex items-center cursor-pointer select-none text-[var(--text-dark)];
+}
+.filter-amount{
+    @apply text-sm text-[var(--text-base)];
+}
+.form-checkbox{
+    @apply relative;
+}
+.form-check{
+    @apply opacity-0;
+}
+.form-checkbox-inner{
+    @apply flex items-center justify-center w-4 h-4 border border-solid border-[var(--border-light)] rounded-[--border-radius-sm];
+}
+input[type="checkbox"]:checked ~ .form-checkbox-inner {
+    @apply bg-[--primary] border-[var(--primary)] transition duration-100 text-white;
+}
+input[type="checkbox"]:checked ~ .form-checkbox-inner .form-check {
+    @apply opacity-100;
+}

@@ -1,5 +1,5 @@
 .hazetrip-search-tab{
-    @apply absolute bottom-[-56%] z-10 left-[100px] w-[82%];
+    @apply z-10 ml-[100px] max-w-[1320px] relative mt-[-160px];
 }
 .tab-nav{
     @apply flex items-center gap-4 relative bottom-[-26px] left-[30px];

@@ -11,6 +11,7 @@
 @import "./styles/tab.css";
 @import "./styles/search.css";
 @import "./styles/button.css";
+@import "./styles/filters.css";
 
 *{
   @apply box-border p-0 m-0;

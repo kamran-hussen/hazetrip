@@ -6,7 +6,7 @@
 }
 .journey-card,
 .departure-and-return-card {
-    @apply border border-solid border-[var(--border-light)] w-[336px] flex-shrink-0 rounded-[var(--border-radius-md)] bg-white p-3.5;
+    @apply border border-solid border-[var(--border-light)] w-[322px] flex-shrink-0 rounded-[var(--border-radius-md)] bg-white p-3.5;
 }
 .departure-and-return-card{
     @apply flex items-center gap-[30px];
@@ -118,4 +118,36 @@ flight-type
 }
 .flight-type .flight-type-button.selected .radio-icon:after{
     @apply bg-white;
+}
+
+/*
+Flight Search
+ */
+.flight-search-result-container{
+    @apply grid gap-6;
+}
+.search-summary-card {
+    @apply flex justify-between items-center bg-white border border-[var(--border-lighter)] rounded-[var(--border-radius-xl)] p-6;
+}
+.flight-route {
+    @apply text-[24px] leading-[32px] font-medium text-[var(--text-dark)];
+}
+.search-summary-card-content{
+    @apply grid gap-2;
+}
+.flight-details {
+    @apply flex items-center text-xs gap-5 font-normal text-[var(--text-base)];
+}
+.flight-details span{
+    @apply relative last:after:hidden;
+}
+.flight-details span:after{
+    @apply absolute top-1/2 right-[-11px] w-1 h-1 rounded-full bg-[var(--text-light)] translate-y-[-50%];
+    content: "";
+}
+.flight-details strong{
+    @apply font-normal text-[var(--text-dark)];
+}
+.modify-button {
+    @apply bg-green-100 text-green-800 text-sm font-semibold px-4 py-2 rounded-md flex items-center hover:bg-green-200 transition;
 }

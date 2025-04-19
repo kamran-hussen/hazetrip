@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import FlightSearchResult from "./pages/FlightSearchResult";
 
 function App() {
   return (
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/flight-search-result" element={<FlightSearchResult />} />
         </Routes>
       </Router>
   );
